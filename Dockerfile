@@ -8,7 +8,7 @@ RUN npm install
 
 COPY . .
 
-ENV PORT=3000
+ENV PORT=8080
 ENV MONGO_URI=mongodb+srv://eslamhussin600:9Lf4lu5lRD0Tth5S@kafka.ig6tsrh.mongodb.net/
 
 EXPOSE 3000
