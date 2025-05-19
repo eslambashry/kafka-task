@@ -6,8 +6,12 @@ COPY package*.json ./
 
 RUN npm install
 
-ENV PORT=8080
+COPY . .
 
-EXPOSE 8080
+ENV PORT=3000
+ENV MONGO_URI=mongodb+srv://eslamhussin600:9Lf4lu5lRD0Tth5S@kafka.ig6tsrh.mongodb.net/
+
+EXPOSE 3000
 
 CMD ["npm", "start"]
+
